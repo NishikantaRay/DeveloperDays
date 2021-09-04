@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h1>hello</h1>
+    <Navbar></Navbar>
+    <div className="row justify-content-center">
+    <div className="col-12 col-md-10">
+        <div className="alert alert-secondary shadow-soft" role="alert">
+            <span className="alert-inner--text">This is a secondary alert with <a href="/" className="alert-link">an
+                    example link</a>. Give it a click if you like.</span>
+        </div>
+        <div className="alert alert-success shadow-soft" role="alert">
+            <span className="alert-inner--text">This is a success alert with <a href="/" className="alert-link">an
+                    example link</a>. Give it a click if you like.</span>
+        </div>
+        <div className="alert alert-info shadow-soft" role="alert">
+            <span className="alert-inner--text">This is a info alert with <a href="/" className="alert-link">an
+                    example link</a>. Give it a click if you like.</span>
+        </div>
+        <div className="alert alert-danger shadow-soft" role="alert">
+            <span className="alert-inner--text">This is a danger alert with <a href="/" className="alert-link">an
+                    example link</a>. Give it a click if you like.</span>
+        </div>
     </div>
+</div>
+    </>
   );
 }
 
