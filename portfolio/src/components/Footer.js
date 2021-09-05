@@ -93,9 +93,8 @@ export default function Footer() {
                     "
                     >
                     <img
-                        src="https://nishikantaray.github.io/studytub/img/core-img/nanda.png"
+                        srcset="https://nishikantaray.github.io/studytub/img/core-img/nanda.png"
                         alt=""
-                        srcset=""
                     />
                     </div>
                     <h3 className="h3 my-3">Study Tub</h3>

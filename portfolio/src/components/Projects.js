@@ -194,7 +194,7 @@ export default function Projects() {
     >
       <div className="card bg-primary border-light shadow-soft">
         <img
-          src={ info.image }
+          srcSet={ info.image }
           className="card-img-top rounded-top"
           alt="Themesberg office"
         />

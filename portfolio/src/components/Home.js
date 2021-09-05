@@ -21,7 +21,7 @@ export default function Home() {
     "
   >
     <img
-      src="https://avatars.githubusercontent.com/u/62615392?v=4"
+      srcSet="https://avatars.githubusercontent.com/u/62615392?v=4"
       className="card-img-top rounded-circle"
       alt="Nishikanta Ray"
       

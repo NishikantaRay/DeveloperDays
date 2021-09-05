@@ -39,7 +39,7 @@ export default function Achieve() {
         <div className="row">
           <div className="col-md-6 pt-4">
             <img
-              src={ user.img }
+              srcSet={ user.img }
               className="card-img-top rounded"
               alt="Themesberg office"
             />

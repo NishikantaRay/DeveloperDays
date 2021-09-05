@@ -23,7 +23,7 @@ export default function About(props) {
             <div className="card bg-primary shadow-inset border-light">
                 <div className="card-header p-4">
                 <img
-                    src={ details.url }
+                    srcSet={ details.url }
                     className="card-img-top rounded"
                     alt="Wood Portrait"
                 />
@@ -77,6 +77,10 @@ export default function About(props) {
             </div>
         </div>
         </div>
+        <div className="justify-content-center text-center mt-5">
+        <button className="btn btn-primary text-secondary mr-2  mb-2" onClick={() => {window.location.href='https://drive.google.com/file/d/1WApjWE7z4gZTPaRMDvvLcMzEMFdt3qqL/view?usp=sharing'}} type="button">Resume</button>
+        </div>
+        
 </>
     )
 }
