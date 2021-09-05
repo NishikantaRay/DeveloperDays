@@ -1,20 +1,18 @@
 
 # Developer Days-2021
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://pbs.twimg.com/media/E-dO7tlUYAEApOo?format=jpg&name=medium)
 
   
 ## Web dev track
+Task-1
 
+### Calculator
 
+![Alt Text](./image/p2.gif)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Task-2
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+### React Portfolio
 
-  
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-  
+![Alt Text](./image/p1.gif)
