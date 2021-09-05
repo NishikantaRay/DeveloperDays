@@ -1,39 +1,126 @@
-import React from 'react'
+import React from "react";
 
 export default function Navbar() {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/">Link</a>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="/">Action</a></li>
-            <li><a className="dropdown-item" href="/">Another action</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="/">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    )
+  return (
+    <>
+      <header className="header-global">
+        <nav
+          id="navbar-main"
+          aria-label="Primary navigation"
+          className="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light"
+        >
+          <div className="container position-relative">
+            <a
+              className="
+          navbar-brand
+          shadow-soft
+          py-2
+          px-3
+          rounded
+          border border-light
+          mr-lg-4
+        "
+              href="/"
+            >
+              NR
+            </a>
+            <div className="navbar-collapse collapse" id="navbar_global">
+              <div className="navbar-collapse-header">
+                <div className="row">
+                  <div className="col-6 collapse-brand">
+                    <a
+                      href="/"
+                      className="
+                  navbar-brand
+                  shadow-soft
+                  py-2
+                  px-3
+                  rounded
+                  border border-light
+                "
+                    >
+                      NR
+                    </a>
+                  </div>
+                  <div className="col-6 collapse-close">
+                    <a
+                      href="#navbar_global"
+                      className="fas fa-times"
+                      data-toggle="collapse"
+                      data-target="#navbar_global"
+                      aria-controls="navbar_global"
+                      aria-expanded="false"
+                      title="close"
+                      aria-label="Toggle navigation"
+                    >
+                      .
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <ul className="navbar-nav navbar-nav-hover ml-auto d-flex ">
+                <li className="nav-item">
+                  <a
+                    className="
+                
+                mr-2
+                nav-link
+                active
+                text-secondary
+                mb-sm-3 mb-md-0
+              "
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0"
+                    href="/"
+                  >
+                    About me
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a
+                    className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0"
+                    href="/"
+                  >
+                    Achievements
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0"
+                    href="/"
+                  >
+                    Projects
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="d-flex ">
+              <button
+                className="navbar-toggler ml-2"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar_global"
+                aria-controls="navbar_global"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <br />
+      <br />
+    </>
+  );
 }
