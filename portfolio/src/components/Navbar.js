@@ -1,8 +1,18 @@
 import React from "react";
-
+import About from "./About";
+import Projects from './Projects'
+import Achieve from './Achieve'
+import Home from './Home'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 export default function Navbar() {
   return (
     <>
+    <Router>
       <header className="header-global">
         <nav
           id="navbar-main"
@@ -28,8 +38,8 @@ export default function Navbar() {
               <div className="navbar-collapse-header">
                 <div className="row">
                   <div className="col-6 collapse-brand">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="
                   navbar-brand
                   shadow-soft
@@ -40,7 +50,7 @@ export default function Navbar() {
                 "
                     >
                       NR
-                    </a>
+                    </Link>
                   </div>
                   <div className="col-6 collapse-close">
                     <a
@@ -61,44 +71,24 @@ export default function Navbar() {
 
               <ul className="navbar-nav navbar-nav-hover ml-auto d-flex ">
                 <li className="nav-item">
-                  <a
-                    className="
-                
-                mr-2
-                nav-link
-                active
-                text-secondary
-                mb-sm-3 mb-md-0
-              "
-                    href="/"
-                  >
+                <Link className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0"
-                    href="/"
-                  >
-                    About me
-                  </a>
+                    <Link className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0" to="/about">
+                    About me</Link>
                 </li>
 
                 <li className="nav-item">
-                  <a
-                    className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0"
-                    href="/"
-                  >
+                <Link className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0" to="/Achieve">
                     Achievements
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
-                    className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0"
-                    href="/"
-                  >
+                <Link className=" mr-2 nav-link text-secondary mb-sm-3 mb-md-0" to="/projects">
                     Projects
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -119,6 +109,21 @@ export default function Navbar() {
           </div>
         </nav>
       </header>
+      <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projects">
+            <Projects/>
+          </Route>
+          <Route path="/Achieve">
+            <Achieve/>
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
       <br />
       <br />
     </>

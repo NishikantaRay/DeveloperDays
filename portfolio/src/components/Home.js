@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Home() {
+  
     return (
         <>
             <div className="pt-5 mt-5 container">
@@ -37,8 +38,6 @@ export default function Home() {
   <div
     className="mx-auto hellob mt-3"
     
-    data-aos="fade-down"
-    data-aos-duration="3000"
   >
     <button
       className="btn btn-icon-only btn-pill btn-twitter mr-3"
@@ -47,7 +46,7 @@ export default function Home() {
       data-aos="zoom-in-up"
       data-aos-duration="3000"
       title="youtube button"
-      onclick="location.href = 'https://twitter.com/NishikantaRay5';"
+      onClick={() => {window.location.href = 'https://twitter.com/NishikantaRay5'}}
     >
       <span aria-hidden="true" className="fab fa-twitter"></span>
     </button>
@@ -56,7 +55,7 @@ export default function Home() {
       type="button"
       aria-label="youtube button"
       title="youtube button"
-      onclick="location.href = 'https://instagram.com/nishikant.ray.16?utm_medium=copy_link';"
+      onClick={() => {window.location.href = 'https://instagram.com/nishikant.ray.16?utm_medium=copy_link'}}
     >
       <span aria-hidden="true" className="fab fa-instagram"></span>
     </button>
@@ -65,7 +64,7 @@ export default function Home() {
       type="button"
       aria-label="youtube button"
       title="youtube button"
-      onclick="location.href = 'https://www.youtube.com/channel/UCDXj9OJ3P0_bvwRetEENp9g/featured';"
+      onClick={() => {window.location.href = 'https://www.youtube.com/channel/UCDXj9OJ3P0_bvwRetEENp9g/featured'}}
     >
       <span aria-hidden="true" className="fab fa-youtube"></span>
     </button>
@@ -74,7 +73,7 @@ export default function Home() {
       type="button"
       aria-label="youtube button"
       title="youtube button"
-      onclick="location.href = 'https://github.com/NishikantaRay';"
+      onClick={() => {window.location.href = 'https://github.com/NishikantaRay'}}
     >
       <span aria-hidden="true" className="fab fa-github"></span>
     </button>
@@ -83,7 +82,7 @@ export default function Home() {
       type="button"
       aria-label="youtube button"
       title="youtube button"
-      onclick="location.href = 'https://www.facebook.com/nishikant.ray.16';"
+      onClick={() => {window.location.href = 'https://www.facebook.com/nishikant.ray.16'}}
     >
       <span aria-hidden="true" className="fab fa-facebook"></span>
     </button>
@@ -92,7 +91,7 @@ export default function Home() {
       type="button"
       aria-label="youtube button"
       title="youtube button"
-      onclick="location.href = 'https://www.linkedin.com/in/nishikanta-ray-7786a0196/';"
+      onClick={() => {window.location.href = 'https://www.linkedin.com/in/nishikanta-ray-7786a0196/'}}
     >
       <span aria-hidden="true" className="fab fa-linkedin"></span>
     </button>
