@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+input {
+  background: #031524;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  box-shadow: inset 6px 6px 8px rgba(0, 0, 0, 0.32),
+    inset -7px -7px 14px 0px rgba(84, 56, 197, 0.2);
+  font-size: 18px;
+  color: white;
+  outline: none;
+  padding: 10px;
+}
+input:hover {
+  background: #031524;
+}
+.head {
+  font-size: 25px;
+  font-weight: 800;
+}
+form {
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.32),
+    -13px -8px 20px 0px rgba(84, 46, 197, 0.2);
+  padding: 50px;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
